@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+{% block title %} Third Page {% endblock %}
+{%block content%}
+<h1>Welcome to <b>Third Page of Django Application</b></h1>
+<h1>{{vari}}<h1>
+<h1>{{msg}}</h1>
+
+<ol>
+{%for x in myfruit %}
+<li>{{x}}</li>
+{% endfor %}
+</ol>
+
+{% if ans %}
+<h1>Case 1 : {{num1}} is Greater than {{num2}}</h1>
+{% else %}
+<h1>Case 2 : {{num1}} is Smaller than {{num2}}</h1>
+{% endif %}
+
+
+{% endblock %}
+
